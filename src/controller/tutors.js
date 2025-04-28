@@ -136,7 +136,7 @@ const deleteTutor = async (req, res, next) => {
             where: { id },
         });
 
-        if (!existingUser) {
+        if (!existingTutor) {
             return res.status(404).json({
                 code: 404,
                 message: "Tutor not found",
